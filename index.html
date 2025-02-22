@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Global Sourcing and Supply</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #006699;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #003366;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #006699 0%, #003366 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem 2rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-large {
+            width: 300px;
+            max-width: 80%;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #e6e6e6;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            color: #006699;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            gap: 0.5rem;
+        }
+
+        .contact-button:hover {
+            background-color: #e6e6e6;
+            transform: translateY(-2px);
+        }
+
+        .contact-button.facebook {
+            background-color: #1877f2;
+            color: white;
+        }
+
+        .contact-button.line {
+            background-color: #00B900;
+            color: white;
+        }
+
+        .contact-button.phone {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+
+        .feature-card h3 {
+            color: #006699;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .contact-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .contact-button {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="Logo.png" alt="Siam Global Sourcing and Supply Logo">
+        <div class="social-links">
+            <a href="https://www.facebook.com/siamglobalsourcing" target="_blank" title="Facebook Page">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://line.me/ti/p/~siamglobal" target="_blank" title="Line">
+                <i class="fab fa-line"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="Logo.png" alt="Siam Global Sourcing and Supply" class="logo-large">
+            <h1>SIAM GLOBAL SOURCING AND SUPPLY</h1>
+            <p class="subtitle">Your Trusted Partner in Global Trade and Supply Solutions</p>
+            
+            <div class="contact-buttons">
+                <a href="https://www.facebook.com/siamglobalsourcing" target="_blank" class="contact-button facebook">
+                    <i class="fab fa-facebook-messenger"></i>
+                    áª·¼èÒ¹ Facebook
+                </a>
+                <a href="tel:0817552006" class="contact-button phone">
+                    <i class="fas fa-phone"></i>
+                    â·Ã 081-755-2006
+                </a>
+                <a href="https://line.me/ti/p/~siamglobal" target="_blank" class="contact-button line">
+                    <i class="fab fa-line"></i>
+                    áÍ´ Line
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Global Sourcing</h3>
+                <p>Expert sourcing services connecting you with reliable suppliers worldwide</p>
+            </div>
+            <div class="feature-card">
+                <h3>Supply Chain Solutions</h3>
+                <p>Comprehensive supply chain management and optimization services</p>
+            </div>
+            <div class="feature-card">
+                <h3>Quality Assurance</h3>
+                <p>Rigorous quality control and assurance processes for all products</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Siam Global Sourcing and Supply. All rights reserved.</p>
+    </footer>
+</body>
+</html>
