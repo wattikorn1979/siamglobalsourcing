@@ -3,55 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIAM GLOBAL SOURCING AND SUPPLY - บริษัทนำเข้าและส่งออกสินค้า</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="SIAM GLOBAL SOURCING AND SUPPLY - ผู้เชี่ยวชาญด้านการจัดหาอะไหล่และเครื่องจักรอุตสาหกรรม บริการจัดหาสินค้าจากทั่วโลก">
-    <meta name="keywords" content="global sourcing, skf, vahle, แบริ่งราคาถูก, kracht, kral, Lenze, Oilgear, Koyo, Horiuchi, Vicker, Yaskawa, Cleco">
+    <title>SIAM GLOBAL SOURCING AND SUPPLY - ผู้เชี่ยวชาญนำเข้าอะไหล่เครื่องจักรอุตสาหกรรม</title>
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description" content="SIAM GLOBAL SOURCING AND SUPPLY - ผู้เชี่ยวชาญด้านการจัดหาอะไหล่และเครื่องจักรอุตสาหกรรม นำเข้าสินค้าแบรนด์ชั้นนำ Mitsubishi, SKF, Siemens, ABB, Yaskawa, และอื่นๆ">
+    <meta name="keywords" content="อะไหล่เครื่องจักร, นำเข้าอะไหล่, Mitsubishi Electric, SKF, Siemens, ABB, Yaskawa, TOSHIBA, HITACHI, FUJI ELECTRIC, PANASONIC, OMRON, SCHNEIDER, DELTA, LS ELECTRIC, SUMITOMO DRIVE, NISSEI, TSUBAKI, NSK, NTN, KOYO, NACHI, IKO, THK, EBARA, KRACHT, GRUNDFOS, KSB, BOSCH REXROTH, YUKEN, PARKER, SMC, FESTO, KEYENCE">
     <meta name="robots" content="index, follow">
+    
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="SIAM GLOBAL SOURCING AND SUPPLY">
-    <meta property="og:description" content="ผู้เชี่ยวชาญด้านการจัดหาอะไหล่และเครื่องจักรอุตสาหกรรม บริการจัดหาสินค้าจากทั่วโลก">
+    <meta property="og:title" content="SIAM GLOBAL SOURCING AND SUPPLY - ผู้เชี่ยวชาญนำเข้าอะไหล่เครื่องจักรอุตสาหกรรม">
+    <meta property="og:description" content="บริการจัดหาอะไหล่เครื่องจักรอุตสาหกรรมครบวงจร นำเข้าสินค้าแบรนด์ชั้นนำระดับโลก พร้อมบริการให้คำปรึกษา">
     <meta property="og:image" content="Logo.png">
     <meta property="og:url" content="https://wattikorn1979.github.io/siamglobalsourcing/">
+    
     <!-- Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
     <style>
         .hero-section {
             background: linear-gradient(135deg, #005792 0%, #00334e 100%);
+            padding: 4rem 0;
         }
         .service-card {
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .service-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .logo {
-            width: 200px; /* ปรับขนาดโลโก้ให้ใหญ่ขึ้น */
+            width: 200px;
+        }
+        .brand-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .brand-list {
+            columns: 3;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .contact-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #005792;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        .product-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product-item h4 {
+            color: #005792;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .product-item p {
+            margin: 0.5rem 0;
+            color: #4a5568;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50">
     <!-- Navbar -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <img src="Logo.png" alt="SIAM GLOBAL SOURCING Logo" class="logo">
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600">บริการ</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-600">สินค้า</a>
+                    <a href="#brands" class="text-gray-700 hover:text-blue-600">แบรนด์</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">ติดต่อ</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section py-20">
+    <div class="hero-section">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <img src="Logo.png" alt="SIAM GLOBAL SOURCING Logo" class="mx-auto mb-8 w-64">
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">SIAM GLOBAL SOURCING AND SUPPLY</h1>
             <p class="text-xl text-white mb-8">ผู้เชี่ยวชาญด้านการจัดหาอะไหล่และเครื่องจักรอุตสาหกรรม</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://www.facebook.com/siamglobalsourcing" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">Facebook</a>
-                <a href="tel:081-755-2006" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">โทรติดต่อ</a>
-                <a href="https://line.me/ti/p/~siamglobal" target="_blank" class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600">Line</a>
+                <a href="https://www.facebook.com/siamglobalsourcing" target="_blank" class="contact-button bg-blue-600 hover:bg-blue-700">
+                    <span>Facebook</span>
+                </a>
+                <a href="tel:081-755-2006" class="contact-button bg-green-600 hover:bg-green-700">
+                    <span>โทรติดต่อ</span>
+                </a>
+                <a href="https://line.me/ti/p/~siamglobal" target="_blank" class="contact-button bg-green-500 hover:bg-green-600">
+                    <span>Line</span>
+                </a>
+                <a href="mailto:siamglobalsourcing@gmail.com" class="contact-button bg-blue-500 hover:bg-blue-600">
+                    <span>ส่งอีเมล</span>
+                </a>
             </div>
         </div>
     </div>
@@ -59,7 +147,7 @@
     <!-- Services Section -->
     <div id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">บริการของเรา</h2>
+            <h2 class="section-title">บริการของเรา</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="service-card bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold mb-4">Global Sourcing</h3>
@@ -76,21 +164,13 @@
             </div>
         </div>
     </div>
-    <section>
-    <h2>ติดต่อเรา</h2>
-    <p>หากคุณมีคำถามหรือข้อสงสัย สามารถกดปุ่มด้านล่างเพื่อส่งอีเมลถึงเราได้ทันที!</p>
 
-    <button onclick="window.location.href='mailto:siamglobalsourcing@gmail.com?subject=ติดต่อจากเว็บไซต์&body=สวัสดีครับทีมงาน SIAM GLOBAL SOURCING & SUPPLY,'"
-            style="padding: 10px 20px; font-size: 18px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
-        ส่งอีเมลถึงเรา
-    </button>
-        <h2>เกี่ยวกับเรา</h2>
-        <p>สยาม โกลบอล ซอร์สซิ่ง แอนด์ ซัพพลาย SIAM GLOBAL SOURCING & SUPPLY เป็นผู้เชี่ยวชาญด้านการจัดหาและจำหน่ายเครื่องจักร ชิ้นส่วน อะไหล่ และอุปกรณ์สำหรับโรงงาน</p>
-        
-        <div class="products">
-            <h2>สินค้าเกี่ยวกับโรงงาน จัดซื้อจัดหา โดยทีมงานมืออาชีพ</h2>
-            
-            <h3>🔧 มอเตอร์และอินเวอร์เตอร์</h3>
+    <!-- Products Section -->
+    <div id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="section-title">สินค้าเกี่ยวกับโรงงาน จัดซื้อจัดหา โดยทีมงานมืออาชีพ</h2>
+
+            <h3 class="text-2xl font-bold mt-8 mb-4">🔧 มอเตอร์และอินเวอร์เตอร์</h3>
             <div class="product-list">
                 <div class="product-item">
                     <h4>มอเตอร์ไฟฟ้า (Electric Motors)</h4>
@@ -106,7 +186,7 @@
                 </div>
             </div>
 
-            <h3>⚙️ เกียร์และระบบส่งกำลัง</h3>
+            <h3 class="text-2xl font-bold mt-8 mb-4">⚙️ เกียร์และระบบส่งกำลัง</h3>
             <div class="product-list">
                 <div class="product-item">
                     <h4>เกียร์ทด (Gear Reducers)</h4>
@@ -122,7 +202,7 @@
                 </div>
             </div>
 
-            <h3>💧 ปั๊มและระบบไฮดรอลิก</h3>
+            <h3 class="text-2xl font-bold mt-8 mb-4">💧 ปั๊มและระบบไฮดรอลิก</h3>
             <div class="product-list">
                 <div class="product-item">
                     <h4>ปั๊มอุตสาหกรรม</h4>
@@ -138,7 +218,7 @@
                 </div>
             </div>
 
-            <h3>🔩 อะไหล่และอุปกรณ์</h3>
+            <h3 class="text-2xl font-bold mt-8 mb-4">🔩 อะไหล่และอุปกรณ์</h3>
             <div class="product-list">
                 <div class="product-item">
                     <h4>อะไหล่เครื่องจักร</h4>
@@ -154,145 +234,150 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <section class="brands">
-            <h2>แบรนด์และผู้ผลิตที่เราจำหน่าย สอบถามได้ทุกแบรนด์ทุกผู้ผลิต หาเทียบสินค้าทดแทนให้ได้ กรณีราคาแพง หรือไม่มีของ</h2>
-            
-            <div class="brand-grid">
-                <div class="brand-category">
-                    <h4>🔌 มอเตอร์และอินเวอร์เตอร์</h4>
-                    <ul class="brand-list">
-                        <li>MITSUBISHI ELECTRIC</li>
-                        <li>TOSHIBA</li>
-                        <li>HITACHI</li>
-                        <li>YASKAWA</li>
-                        <li>FUJI ELECTRIC</li>
-                        <li>PANASONIC</li>
-                        <li>ABB</li>
-                        <li>SIEMENS</li>
-                        <li>OMRON</li>
-                        <li>SCHNEIDER</li>
-                        <li>DELTA</li>
-                        <li>LS ELECTRIC</li>
-                        <li>OILGEAR</li>
-                    </ul>
-                </div>
+    <!-- Brands Section -->
+    <div id="brands" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="section-title">แบรนด์และผู้ผลิตที่เราจำหน่าย</h2>
+            <p class="text-center mb-8">สอบถามได้ทุกแบรนด์ทุกผู้ผลิต หาเทียบสินค้าทดแทนให้ได้ กรณีราคาแพง หรือไม่มีของ</p>
 
-                <div class="brand-category">
-                    <h4>⚙️ เกียร์และระบบส่งกำลัง</h4>
-                    <ul class="brand-list">
-                        <li>SUMITOMO DRIVE</li>
-                        <li>NISSEI</li>
-                        <li>TSUBAKI</li>
-                        <li>MITSUBOSHI</li>
-                        <li>BANDO</li>
-                        <li>NSK</li>
-                        <li>SKF</li>
-                        <li>NTN</li>
-                        <li>KOYO</li>
-                        <li>NACHI</li>
-                        <li>IKO</li>
-                        <li>THK</li>
-                        <li>NIPPON GEAR</li>
-                    </ul>
-                </div>
-
-                <div class="brand-category">
-                    <h4>💧 ปั๊มและระบบไฮดรอลิก</h4>
-                    <ul class="brand-list">
-                        <li>EBARA</li>
-                        <li>KRACHT</li>
-                        <li>GRUNDFOS</li>
-                        <li>KSB</li>
-                        <li>TSURUMI</li>
-                        <li>BOSCH REXROTH</li>
-                        <li>YUKEN</li>
-                        <li>NACHI</li>
-                        <li>DAIKIN</li>
-                        <li>PARKER</li>
-                        <li>SMC</li>
-                        <li>CKD</li>
-                        <li>FESTO</li>
-                    </ul>
-                </div>
-
-                <div class="brand-category">
-                    <h4>🔧 อุปกรณ์ควบคุมและเซนเซอร์</h4>
-                    <ul class="brand-list">
-                        <li>KEYENCE</li>
-                        <li>OMRON</li>
-                        <li>MITSUBISHI</li>
-                        <li>BALLUFF</li>
-                        <li>SICK</li>
-                        <li>PEPPERL+FUCHS</li>
-                        <li>IFM</li>
-                        <li>TURCK</li>
-                        <li>BANNER</li>
-                        <li>AUTONICS</li>
-                        <li>OPTEX FA</li>
-                        <li>PANASONIC</li>
-                    </ul>
-                </div>
-
-                <div class="brand-category">
-                    <h4>🛠️ อุปกรณ์นิวเมติกส์</h4>
-                    <ul class="brand-list">
-                        <li>SMC</li>
-                        <li>FESTO</li>
-                        <li>CKD</li>
-                        <li>KOGANEI</li>
-                        <li>PARKER</li>
-                        <li>CAMOZZI</li>
-                        <li>AIRTAC</li>
-                        <li>TPC</li>
-                        <li>NORGREN</li>
-                        <li>MAC</li>
-                        <li>MINDMAN</li>
-                        <li>KURODA</li>
-                    </ul>
-                </div>
-
-                <div class="brand-category">
-                    <h4>📊 ระบบวัดและควบคุม</h4>
-                    <ul class="brand-list">
-                        <li>YOKOGAWA</li>
-                        <li>ENDRESS+HAUSER</li>
-                        <li>HONEYWELL</li>
-                        <li>SIEMENS</li>
-                        <li>ABB</li>
-                        <li>EMERSON</li>
-                        <li>WIKA</li>
-                        <li>OMEGA</li>
-                        <li>BURKERT</li>
-                        <li>DWYER</li>
-                        <li>JUMO</li>
-                        <li>FUJI ELECTRIC</li>
-                    </ul>
-                </div>
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">🔌 มอเตอร์และอินเวอร์เตอร์</h4>
+                <ul class="brand-list">
+                    <li>MITSUBISHI ELECTRIC</li>
+                    <li>TOSHIBA</li>
+                    <li>HITACHI</li>
+                    <li>YASKAWA</li>
+                    <li>FUJI ELECTRIC</li>
+                    <li>PANASONIC</li>
+                    <li>ABB</li>
+                    <li>SIEMENS</li>
+                    <li>OMRON</li>
+                    <li>SCHNEIDER</li>
+                    <li>DELTA</li>
+                    <li>LS ELECTRIC</li>
+                    <li>OILGEAR</li>
+                </ul>
             </div>
-        </section>
 
-        <div class="contact-info">
-            <h2>ติดต่อเรา</h2>
-            <p>กรุณาส่ง INQUIRY ของท่านพร้อมรายละเอียดสินค้าเครื่องจักร ชิ้นส่วน อะไหล่ เครื่องมือและอุปกรณ์ หรือ งานบริการ SERVICE ที่ท่านต้องการ</p>
-            <p>Email: <a href="mailto:siamglobalsourcing@gmail.com">siamglobalsourcing@gmail.com</a></p>
-            <p>เบอร์มือถือ: <a href="tel:0829354408">082-935-4408</a> หรือ <a href="tel:0963579055">096-357-9055</a></p>
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">⚙️ เกียร์และระบบส่งกำลัง</h4>
+                <ul class="brand-list">
+                    <li>SUMITOMO DRIVE</li>
+                    <li>NISSEI</li>
+                    <li>TSUBAKI</li>
+                    <li>MITSUBOSHI</li>
+                    <li>BANDO</li>
+                    <li>NSK</li>
+                    <li>SKF</li>
+                    <li>NTN</li>
+                    <li>KOYO</li>
+                    <li>NACHI</li>
+                    <li>IKO</li>
+                    <li>THK</li>
+                    <li>NIPPON GEAR</li>
+                </ul>
+            </div>
+
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">💧 ปั๊มและระบบไฮดรอลิก</h4>
+                <ul class="brand-list">
+                    <li>EBARA</li>
+                    <li>KRACHT</li>
+                    <li>GRUNDFOS</li>
+                    <li>KSB</li>
+                    <li>TSURUMI</li>
+                    <li>BOSCH REXROTH</li>
+                    <li>YUKEN</li>
+                    <li>NACHI</li>
+                    <li>DAIKIN</li>
+                    <li>PARKER</li>
+                    <li>SMC</li>
+                    <li>CKD</li>
+                    <li>FESTO</li>
+                </ul>
+            </div>
+
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">🔧 อุปกรณ์ควบคุมและเซนเซอร์</h4>
+                <ul class="brand-list">
+                    <li>KEYENCE</li>
+                    <li>OMRON</li>
+                    <li>MITSUBISHI</li>
+                    <li>BALLUFF</li>
+                    <li>SICK</li>
+                    <li>PEPPERL+FUCHS</li>
+                    <li>IFM</li>
+                    <li>TURCK</li>
+                    <li>BANNER</li>
+                    <li>AUTONICS</li>
+                    <li>OPTEX FA</li>
+                    <li>PANASONIC</li>
+                </ul>
+            </div>
+
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">🛠️ อุปกรณ์นิวเมติกส์</h4>
+                <ul class="brand-list">
+                    <li>SMC</li>
+                    <li>FESTO</li>
+                    <li>CKD</li>
+                    <li>KOGANEI</li>
+                    <li>PARKER</li>
+                    <li>CAMOZZI</li>
+                    <li>AIRTAC</li>
+                    <li>TPC</li>
+                    <li>NORGREN</li>
+                    <li>MAC</li>
+                    <li>MINDMAN</li>
+                    <li>KURODA</li>
+                </ul>
+            </div>
+
+            <div class="brand-category">
+                <h4 class="text-xl font-bold">📊 ระบบวัดและควบคุม</h4>
+                <ul class="brand-list">
+                    <li>YOKOGAWA</li>
+                    <li>ENDRESS+HAUSER</li>
+                    <li>HONEYWELL</li>
+                    <li>SIEMENS</li>
+                    <li>ABB</li>
+                    <li>EMERSON</li>
+                    <li>WIKA</li>
+                    <li>OMEGA</li>
+                    <li>BURKERT</li>
+                    <li>DWYER</li>
+                    <li>JUMO</li>
+                    <li>FUJI ELECTRIC</li>
+                </ul>
+            </div>
         </div>
+    </div>
 
     <!-- Contact Section -->
     <div id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">ติดต่อเรา</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                <a href="https://www.facebook.com/siamglobalsourcing" target="_blank" class="flex items-center text-blue-600 hover:text-blue-700">
-                    <span class="text-lg">Facebook: Siam Global Sourcing</span>
-                </a>
-                <a href="tel:081-755-2006" class="flex items-center text-green-600 hover:text-green-700">
-                    <span class="text-lg">โทรติดต่อ</span>
-                </a>
-                <a href="https://line.me/ti/p/~siamglobal" target="_blank" class="flex items-center text-green-500 hover:text-green-600">
-                    <span class="text-lg">Line: siamglobal</span>
-                </a>
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="section-title">ติดต่อเรา</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">ข้อมูลติดต่อ</h3>
+                    <p class="mb-4">กรุณาส่ง INQUIRY ของท่านพร้อมรายละเอียดสินค้าเครื่องจักร ชิ้นส่วน อะไหล่ เครื่องมือและอุปกรณ์ หรือ งานบริการ SERVICE ที่ท่านต้องการ</p>
+                    <div class="space-y-2">
+                        <p>Email: <a href="mailto:siamglobalsourcing@gmail.com" class="text-blue-600 hover:underline">siamglobalsourcing@gmail.com</a></p>
+                        <p>เบอร์มือถือ: <a href="tel:0829354408" class="text-blue-600 hover:underline">082-935-4408</a></p>
+                        <p>หรือ <a href="tel:0963579055" class="text-blue-600 hover:underline">096-357-9055</a></p>
+                        <p>Line ID: siamglobal</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">ส่งข้อความถึงเรา</h3>
+                    <p class="mb-4">คลิกที่ปุ่มด้านล่างเพื่อส่งอีเมลถึงเราได้ทันที</p>
+                    <a href="mailto:siamglobalsourcing@gmail.com?subject=สอบถามข้อมูลสินค้า&body=สวัสดีครับ/ค่ะ ทีมงาน SIAM GLOBAL SOURCING," 
+                       class="contact-button bg-blue-500 hover:bg-blue-600 inline-block">
+                        ส่งอีเมลถึงเรา
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -300,7 +385,9 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p>&copy; 2025 SIAM GLOBAL SOURCING AND SUPPLY. All rights reserved.</p>
+            <p class="mb-2">SIAM GLOBAL SOURCING AND SUPPLY</p>
+            <p>ผู้เชี่ยวชาญด้านการจัดหาอะไหล่และเครื่องจักรอุตสาหกรรม</p>
+            <p class="mt-4">&copy; 2025 All rights reserved.</p>
         </div>
     </footer>
 </body>
