@@ -937,40 +937,31 @@
         </div>
     </footer>
 
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // ระบบเปลี่ยนภาษา
-    const langButtons = document.querySelectorAll('.lang-btn');
-    
-    // ฟังก์ชันเปลี่ยนภาษา
-    function setLanguage(lang) {
-        // อัปเดตปุ่ม
-        langButtons.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-        });
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // เริ่มต้นด้วยภาษาไทย
+        document.body.classList.add('lang-th');
         
-        // อัปเดตเนื้อหา
-        document.body.classList.remove('lang-th', 'lang-en');
-        document.body.classList.add(`lang-${lang}`);
-        localStorage.setItem('preferredLang', lang);
-    }
-
-    // ตั้งค่าการคลิกปุ่ม
-    langButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            setLanguage(this.getAttribute('data-lang'));
+        // เพิ่ม event listener ให้กับปุ่มเปลี่ยนภาษา
+        const langButtons = document.querySelectorAll('.lang-btn');
+        langButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                
+                // ลบคลาสภาษาทั้งหมดออกจาก body
+                document.body.classList.remove('lang-th', 'lang-en');
+                
+                // เพิ่มคลาสภาษาที่เลือก
+                document.body.classList.add('lang-' + lang);
+                
+                // อัปเดตสถานะปุ่ม active
+                langButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
         });
     });
-    
-    // ตรวจสอบภาษาที่บันทึกไว้
-    const savedLang = localStorage.getItem('preferredLang') || 'th';
-    setLanguage(savedLang);
-    
-    // ตรวจสอบการโหลดเนื้อหา
-    if (document.body.children.length < 5) { // ตัวเลขอาจปรับตามโครงสร้างเว็บคุณ
-        console.warn('Content may not have loaded properly');
-    }
-});
 </script>
 </body>
 </html>
